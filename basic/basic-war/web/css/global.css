@@ -1,0 +1,22 @@
+/* 
+    Created on : Jul 18, 2020, 3:57:05 PM
+    Author     : william
+*/
+
+body {
+    background-color: #333333;
+    color: white;
+}
+
+table.client-request {
+    width: 100%;
+    border: 1px solid black;
+}
+
+table.client-request tr {
+    background-color: #666666;
+}
+
+table.client-request td {
+    text-align: center;
+}
