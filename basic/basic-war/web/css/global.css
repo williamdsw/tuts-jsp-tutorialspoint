@@ -68,3 +68,14 @@ div.single-cookie {
     border: 1px solid cadetblue;
     padding: 1rem;
 }
+
+div.upload-file-field {
+    padding: 1rem;
+}
+
+div.file-info {
+    display: inline-block;
+    border: 1px solid gold;
+    padding: 1rem;
+    margin: 1rem;
+}
