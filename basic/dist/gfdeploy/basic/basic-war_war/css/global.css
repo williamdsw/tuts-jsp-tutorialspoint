@@ -20,3 +20,51 @@ table.client-request tr {
 table.client-request td {
     text-align: center;
 }
+
+h2.cookies-header {
+    text-align: center;
+}
+
+div.cookies-form-container {
+    width: 40rem;
+    max-width: 40rem;
+    margin: 1rem auto;
+    background-color: #333366;
+    padding: 1rem;
+    border: 2px dotted aquamarine;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+div.form-field {
+    margin: 1rem 0;
+}
+
+div.form-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div.form-field input[type="text"], 
+div.form-field input[type="number"], 
+div.form-field textarea {
+    width: 100%;
+    width: -moz-available;
+}
+
+div.form-field textarea {
+    resize: vertical;
+    padding: 10px;
+}
+
+div.form-field button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+div.single-cookie {
+    display: inline-block;
+    border: 1px solid cadetblue;
+    padding: 1rem;
+}
