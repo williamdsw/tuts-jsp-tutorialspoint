@@ -20,11 +20,11 @@
             <form action="SendingEmailServlet" method="POST" enctype="multipart/form-data">
                 <div class="form-field">
                     <label> * To: </label>
-                    <input type="text" name="to" value="" placeholder="to@email.com" required="required"/>
+                    <input type="email" name="to" value="" placeholder="to@email.com" required="required"/>
                 </div>
                 <div class="form-field">
                     <label> * From: </label>
-                    <input type="text" name="from" value="" placeholder="from@email.com" required="required"/>
+                    <input type="email" name="from" value="" placeholder="from@email.com" required="required"/>
                 </div>
                 <div class="form-field">
                     <label> * Subject: </label>
