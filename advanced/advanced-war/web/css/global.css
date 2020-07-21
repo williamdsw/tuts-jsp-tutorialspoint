@@ -1,0 +1,13 @@
+/* 
+    Created on : 21/07/2020, 13:02:00
+    Author     : William
+*/
+
+div.time-zone-info {
+    display: inline-block;
+    width: 15rem;
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    margin: 5px;
+    padding: 5px;
+}
