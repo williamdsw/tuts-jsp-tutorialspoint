@@ -13,8 +13,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Standard Tag Library</title>
         <link rel="stylesheet" href="css/global.css"/>
+        <title>Standard Tag Library</title>
     </head>
     <body>
         
@@ -27,7 +27,7 @@
         
         <p> Salary: ${salary} </p>
         
-        <table>
+        <table class="table-format">
             <thead>
                 <td> Currency </td>
                 <td> Number: Max Integer Digits </td>
@@ -62,7 +62,7 @@
         <c:set var="now" value="<%= new Date () %>"/>
         <p> Today: ${now} </p>
         
-        <table>
+        <table class="table-format">
             <thead>
                 <td> Time </td>
                 <td> Date </td>

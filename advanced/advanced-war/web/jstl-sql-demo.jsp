@@ -12,6 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/global.css"/>
         <title>JSTL SQL Tags</title>
     </head>
     <body>
@@ -73,7 +74,7 @@
         <p> Update result: ${myUpdate} </p>
         <p> Transaction result: ${myTransaction} </p>
             
-        <table>
+        <table class="table-sql">
             <thead>
                 <th> Id </th>
                 <th> Name </th>

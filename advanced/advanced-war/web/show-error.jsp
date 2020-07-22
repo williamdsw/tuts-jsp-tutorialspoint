@@ -11,11 +11,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/global.css"/>
         <title>Show Error</title>
     </head>
     <body>
         <h1> Ops...! </h1>
-        <table>
+        <table class="table-error">
             <thead></thead>
             <tbody>
                 <tr>

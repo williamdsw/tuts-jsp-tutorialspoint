@@ -11,13 +11,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/global.css"/>
         <title>Products</title>
     </head>
     <body>
         <c:set var="listProducts" value="${products}" />
         
         <h1> Products </h1>
-        <table>
+        <table class="table-products">
             <thead>
                 <td> Id </td>
                 <td> Name </td>
