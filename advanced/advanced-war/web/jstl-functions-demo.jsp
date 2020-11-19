@@ -15,42 +15,48 @@
         <title>JSTL Functions</title>
     </head>
     <body>
-        <h2> JSTL Functions </h2>
-        
-        <c:set var="phrase" value="Highway to the <i> DANGER </i> Zone!"/>
-        <c:set var="split" value="${fn:split (phrase, ' ')}"/>
-        <c:set var="join" value="${fn:join (split, ';')}"/>
-        <c:set var="trim" value="${fn:trim (phrase)}"/>
-        
-        <p><b> Phrase: </b> ${phrase} </p>
-        
-        <c:if test="${fn:contains (phrase, 'DANGER')}">
-            <p> Contains <b> DANGER </b></p>
-        </c:if>
-        
-        <c:if test="${fn:containsIgnoreCase (phrase, 'Danger')}">
-            <p> Contains <b> Danger </b> ignoring case </p>
-        </c:if>
-        
-        <c:if test="${fn:startsWith (phrase, 'H')}">
-            <p> Starts with <b> H! </b></p>
-        </c:if>
-        
-        <c:if test="${fn:endsWith (phrase, 'Zone!')}">
-            <p> Ends with <b> Zone! </b></p>
-        </c:if>
-            
-        <p> With escape xml: ${fn:escapeXml (phrase)} </p>
-        <p> Index Of 'the': ${fn:indexOf (phrase, "the")} </p>
-        <p> Split on phrase: <c:forEach var="word" items="${split}"> ${word} </c:forEach> </p>
-        <p> Join on split: ${join} </p>
-        <p> Length of phrase: ${fn:length (phrase)} </p>
-        <p> Replace 'Highway' with 'Subway': ${fn:replace (phrase, 'Highway', 'Subway')} </p>
-        <p> Substring (5, 15): ${fn:substring (phrase, 5, 15)} </p>
-        <p> Substring after 'the': ${fn:substringAfter (phrase, 'the')} </p>
-        <p> Substring before 'the': ${fn:substringBefore (phrase, 'the')} </p>
-        <p> Lower case: ${fn:toLowerCase (phrase)} </p>
-        <p> Upper case: ${fn:toUpperCase (phrase)} </p>
-        <p> Trim: ${trim} </p>
+        <main>
+            <article>
+                <header>
+                    <h2> JSTL Functions </h2>
+                </header>
+
+                <c:set var="phrase" value="Highway to the <i> DANGER </i> Zone!"/>
+                <c:set var="split" value="${fn:split (phrase, ' ')}"/>
+                <c:set var="join" value="${fn:join (split, ';')}"/>
+                <c:set var="trim" value="${fn:trim (phrase)}"/>
+                
+                <p><b> Phrase: </b> ${phrase} </p>
+                
+                <c:if test="${fn:contains (phrase, 'DANGER')}">
+                    <p> Contains <b> DANGER </b></p>
+                </c:if>
+                
+                <c:if test="${fn:containsIgnoreCase (phrase, 'Danger')}">
+                    <p> Contains <b> Danger </b> ignoring case </p>
+                </c:if>
+                
+                <c:if test="${fn:startsWith (phrase, 'H')}">
+                    <p> Starts with <b> H! </b></p>
+                </c:if>
+                
+                <c:if test="${fn:endsWith (phrase, 'Zone!')}">
+                    <p> Ends with <b> Zone! </b></p>
+                </c:if>
+                    
+                <p> With escape xml: ${fn:escapeXml (phrase)} </p>
+                <p> Index Of 'the': ${fn:indexOf (phrase, "the")} </p>
+                <p> Split on phrase: <c:forEach var="word" items="${split}"> ${word} </c:forEach> </p>
+                <p> Join on split: ${join} </p>
+                <p> Length of phrase: ${fn:length (phrase)} </p>
+                <p> Replace 'Highway' with 'Subway': ${fn:replace (phrase, 'Highway', 'Subway')} </p>
+                <p> Substring (5, 15): ${fn:substring (phrase, 5, 15)} </p>
+                <p> Substring after 'the': ${fn:substringAfter (phrase, 'the')} </p>
+                <p> Substring before 'the': ${fn:substringBefore (phrase, 'the')} </p>
+                <p> Lower case: ${fn:toLowerCase (phrase)} </p>
+                <p> Upper case: ${fn:toUpperCase (phrase)} </p>
+                <p> Trim: ${trim} </p>
+            </article>
+        </main>
     </body>
 </html>

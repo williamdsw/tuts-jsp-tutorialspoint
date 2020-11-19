@@ -15,18 +15,24 @@
         <title>Debugging</title>
     </head>
     <body>
-        <h1> Debugging </h1>
-        
         <% Logger logger = Logger.getLogger (this.getClass ().getName ()); %>
         
-        <c:forEach var="counter" begin="1" end="10" step="1">
-            <%
-                Integer counter = (Integer) pageContext.findAttribute ("counter");
-                String output = "Counter: " + counter;
-                logger.info (output);
-            %>
-            
-            <p> ${counter} </p>
-        </c:forEach>
+        <main>
+            <article>
+                <header>
+                    <h1> Debugging </h1>
+                </header>
+
+                <c:forEach var="counter" begin="1" end="10" step="1">
+                    <%
+                        Integer counter = (Integer) pageContext.findAttribute ("counter");
+                        String output = "Counter: " + counter;
+                        logger.info (output);
+                    %>
+                    
+                    <p> ${counter} </p>
+                </c:forEach>
+            </article>
+        </main>
     </body>
 </html>

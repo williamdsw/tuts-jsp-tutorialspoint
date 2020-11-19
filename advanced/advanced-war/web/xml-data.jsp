@@ -16,12 +16,18 @@
         <title>XML Data</title>
     </head>
     <body>
-        <h1> XML Data </h1>
-        <c:import var="bands" url="http://localhost:8080/advanced-war/band-xml.jsp"/>
-        
+        <c:import var="bands" url="band-xml.jsp"/>
         <x:parse var="output" xml="${bands}"/>
-        <p> First band's name: <x:out select="$output/bands/band[1]/name"/></p>
-        <p> Second band's year: <x:out select="$output/bands/band[2]/year"/></p>
-        
+
+        <main>
+            <article>
+                <header>
+                    <h1> XML Data </h1>            
+                </header>
+
+                <p> First band's name: <x:out select="$output/bands/band[1]/name"/></p>
+                <p> Second band's year: <x:out select="$output/bands/band[2]/year"/></p>
+            </article>
+        </main>
     </body>
 </html>

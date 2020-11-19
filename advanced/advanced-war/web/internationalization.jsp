@@ -13,15 +13,22 @@
         <title>Internationalization</title>
     </head>
     <body>
-        <h1> Internationalization data: </h1>
-        <p> Language: ${language} </p>
-        <p> Display Language: ${displayLanguage} </p>
-        <p> Country: ${country} </p>
-        <p> Display Country: ${displayCountry} </p>
-        <p> ISO3 Country: ${ISO3Country} </p>
-        <p> ISO3 Language: ${ISO3Language} </p>
-        <p> Local Date: ${localDate} </p>
-        <p> Price: ${formattedPrice} </p>
-        <p> Percent: ${formattedPercent} </p>
+        <main>
+            <article>
+                <header>
+                    <h1> Internationalization data: </h1>            
+                </header>
+
+                <p> Language: ${language} </p>
+                <p> Display Language: ${displayLanguage} </p>
+                <p> Country: ${country} </p>
+                <p> Display Country: ${displayCountry} </p>
+                <p> ISO3 Country: ${ISO3Country} </p>
+                <p> ISO3 Language: ${ISO3Language} </p>
+                <p> Local Date: ${localDate} </p>
+                <p> Price: ${formattedPrice} </p>
+                <p> Percent: ${formattedPercent} </p>
+            </article>
+        </main>
     </body>
 </html>

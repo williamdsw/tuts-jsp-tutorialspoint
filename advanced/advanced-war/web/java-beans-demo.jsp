@@ -13,17 +13,30 @@
         <title>Java Beans Demo</title>
     </head>
     <body>
-        <h1> Java Beans Demo </h1>
-        
-        <jsp:useBean id="band" class="com.williamdsw.beans.BandBean">
-            <jsp:setProperty name="band" property="name" value="Megadeth"/>
-            <jsp:setProperty name="band" property="genres" value="Thrash Metal, Heavy Metal"/>
-            <jsp:setProperty name="band" property="year" value="1983"/>
-        </jsp:useBean>
-        
-        <h2> Band info: </h2>
-        <p> Name: <jsp:getProperty name="band" property="name"/> </p>
-        <p> Genres: ${band.genres} </p>
-        <p> Year: ${band.year} </p>
+        <main>
+            <article>
+                <header>
+                    <h1> Java Beans Demo </h1>
+                </header>
+
+                <hr>
+
+                <jsp:useBean id="band" class="com.williamdsw.beans.BandBean">
+                    <jsp:setProperty name="band" property="name" value="Megadeth"/>
+                    <jsp:setProperty name="band" property="genres" value="Thrash Metal, Heavy Metal"/>
+                    <jsp:setProperty name="band" property="year" value="1983"/>
+                </jsp:useBean>
+            </article>
+
+            <section>
+                <header>
+                    <h2> Band info: </h2>
+                </header>
+
+                <p> Name: <jsp:getProperty name="band" property="name"/> </p>
+                <p> Genres: ${band.genres} </p>
+                <p> Year: ${band.year} </p>
+            </section>
+        </main>
     </body>
 </html>

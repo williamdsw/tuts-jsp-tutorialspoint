@@ -15,31 +15,38 @@
         <title>Show Error</title>
     </head>
     <body>
-        <h1> Ops...! </h1>
-        <table class="table-error">
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <td> Error: </td>
-                    <td> ${pageContext.exception} </td>
-                </tr>
-                <tr>
-                    <td> URI: </td>
-                    <td> ${pageContext.errorData.requestURI} </td>
-                </tr>
-                <tr>
-                    <td> Status Code: </td>
-                    <td> ${pageContext.errorData.statusCode} </td>
-                </tr>
-                <tr>
-                    <td> Stack Trace: </td>
-                    <td>
-                        <c:forEach var="trace" items="${pageContext.exception.stackTrace}">
-                            <pre> ${trace} </pre>
-                        </c:forEach>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <main>
+            <article>
+                <header>
+                    <h1> Ops...! </h1>            
+                </header>
+
+                <table class="table-error">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td> Error: </td>
+                            <td> ${pageContext.exception} </td>
+                        </tr>
+                        <tr>
+                            <td> URI: </td>
+                            <td> ${pageContext.errorData.requestURI} </td>
+                        </tr>
+                        <tr>
+                            <td> Status Code: </td>
+                            <td> ${pageContext.errorData.statusCode} </td>
+                        </tr>
+                        <tr>
+                            <td> Stack Trace: </td>
+                            <td>
+                                <c:forEach var="trace" items="${pageContext.exception.stackTrace}">
+                                    <pre> ${trace} </pre>
+                                </c:forEach>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
     </body>
 </html>

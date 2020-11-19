@@ -14,11 +14,18 @@
         <title>Expression Language</title>
     </head>
     <body>
-        <h1> Expression Language </h1>
-        <c:set var="username" value="Batman"/>
+        <main>
+            <article>
+                <header>
+                    <h1> Expression Language </h1>            
+                </header>
+
+                <c:set var="username" value="Batman"/>
         
-        <p> Username: ${username} </p>
-        <p> User Agent: ${header["user-agent"]} </p>
-        <p> Query String: ${pageContext.request.queryString} </p>
+                <p> Username: ${username} </p>
+                <p> User Agent: ${header["user-agent"]} </p>
+                <p> Query String: ${pageContext.request.queryString} </p>
+            </article>
+        </main>
     </body>
 </html>
