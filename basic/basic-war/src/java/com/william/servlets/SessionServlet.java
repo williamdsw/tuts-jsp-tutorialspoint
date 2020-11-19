@@ -1,7 +1,6 @@
 package com.william.servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,7 +38,8 @@ public class SessionServlet extends HttpServlet {
             session.setAttribute(numberOfVisitsKey, numberOfVisits);
         }
         
-        numberOfVisits = (Integer) session.getAttribute(numberOfVisitsKey);
+        Object attr = session.getAttribute(numberOfVisitsKey);
+        numberOfVisits = (attr != null ? Integer.parseInt(attr.toString()) : 0);
         numberOfVisits++;
         userId = (String) session.getAttribute(userIdKey);
         session.setAttribute(numberOfVisitsKey, numberOfVisits);
