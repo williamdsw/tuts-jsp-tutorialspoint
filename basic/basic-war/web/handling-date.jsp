@@ -12,7 +12,15 @@
         <title>Handling Date</title>
     </head>
     <body>
-        <p><b> Date: </b> ${date} </p>
-        <p><b> Formatted Date: </b> ${formattedDate} </p>
+        <main>
+            <article>
+                <header>
+                    <h1> Handling Date </h1>
+                </header>
+
+                <p><b> Date: </b> ${date} </p>
+                <p><b> Formatted Date: </b> ${formattedDate} </p>
+            </article>
+        </main>
     </body>
 </html>

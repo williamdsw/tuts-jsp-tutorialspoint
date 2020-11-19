@@ -13,6 +13,16 @@
         <title>Today Date</title>
     </head>
     <body>
-        <p><b> Today: </b> <%= new Date ().toString() %></p>
+        <main>
+            <article>
+                <header>
+                    <h1> Today Date! </h1>
+                </header>
+
+                <hr>
+
+                <p><b> Today: </b> <%= new Date ().toString() %></p>
+            </article>
+        </main>
     </body>
 </html>

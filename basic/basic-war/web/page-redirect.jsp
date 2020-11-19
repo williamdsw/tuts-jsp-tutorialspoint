@@ -12,8 +12,16 @@
         <title>Page Redirect</title>
     </head>
     <body>
-        <form action="PageRedirectServlet" method="POST">
-            <button type="submit"> Redirect to my Github </button>
-        </form>
+        <main>
+            <article>
+                <header>
+                    <h1> Page Redirect </h1>
+                </header>
+
+                <form action="PageRedirectServlet" method="POST">
+                    <button type="submit"> Redirect to my Github </button>
+                </form>
+            </article>
+        </main>
     </body>
 </html>

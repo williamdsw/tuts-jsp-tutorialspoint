@@ -12,7 +12,19 @@
         <title>Session Servlet Test!</title>
     </head>
     <body>
-        <h3> Info about User's Session: </h3>
-        <div>${sessionInfo}</div>
+        <main>
+            <article>
+                <header>
+                    <h1> Session Servlet Test! </h1>
+                </header>
+
+                <hr>
+
+                <header>
+                    <h3> Info about User's Session: </h3>
+                </header>
+                <div> ${sessionInfo} </div>
+            </article>
+        </main>
     </body>
 </html>

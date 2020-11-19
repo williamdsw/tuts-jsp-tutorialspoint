@@ -12,20 +12,29 @@
         <title>Hits Counter</title>
     </head>
     <body>
-        <%
-            Integer hitsCounter = (Integer) application.getAttribute ("hitsCounter");
-            if (hitsCounter == null || hitsCounter == 0) {
-                out.println ("You're new huh? Be welcomed!");
-                hitsCounter = 1;
-            }
-            else {
-                out.println ("Welcome back, Jojo!");
-                hitsCounter++;
-            }
+        <main>
+            <article>
+                <header>
+                    <h1> Hits Counter </h1>
+                </header>
+            </article>
+
+            <%
+                Integer hitsCounter = (Integer) application.getAttribute ("hitsCounter");
+                if (hitsCounter == null || hitsCounter == 0) {
+                    out.println ("You're new huh? Be welcomed!");
+                    hitsCounter = 1;
+                }
+                else {
+                    out.println ("Welcome back, Jojo!");
+                    hitsCounter++;
+                }
+                
+                application.setAttribute ("hitsCounter", hitsCounter);
+            %>
             
-            application.setAttribute ("hitsCounter", hitsCounter);
-        %>
+            <p> Total number of visits: <%= hitsCounter %></p>
+        </main>
         
-        <p> Total number of visits: <%= hitsCounter %></p>
     </body>
 </html>

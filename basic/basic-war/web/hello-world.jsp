@@ -12,9 +12,15 @@
         <title>Hello World!</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <main>
+            <article>
+                <header>
+                    <h1> Hello World! </h1>
+                </header>
         
-        <%-- JSP Comment! --%>
-        <p> <% out.println("Your IP Address is: " + request.getRemoteAddr()); %> </p>
+                <%-- JSP Comment! --%>
+                <p> <% out.println("Your IP Address is: " + request.getRemoteAddr()); %> </p>
+            </article>
+        </main>
     </body>
 </html>

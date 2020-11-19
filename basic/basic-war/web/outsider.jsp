@@ -12,6 +12,11 @@
         <title>Outsider</title>
     </head>
     <body>
-        <h5>I'm called by another JSP using directives!</h5>
+        <section>
+            <header>
+                <h5>I'm called by another JSP using directives!</h5>
+            </header>
+        </section>
+        
     </body>
 </html>

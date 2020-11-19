@@ -30,6 +30,14 @@
             out.println(fullTime);
         %>
         
-        <p> Refreshing in 10 seconds... </p>
+        <main>
+            <article>
+                <header>
+                    <h1> Server Response </h1>
+                </header>
+        
+                <p> Refreshing in 10 seconds... </p>
+            </article>
+        </main>
     </body>
 </html>

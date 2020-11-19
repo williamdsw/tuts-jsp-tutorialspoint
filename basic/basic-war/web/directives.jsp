@@ -16,11 +16,16 @@
         <title>Directives</title>
     </head>
     <body>
-        <h2> Using JSP and XML sintax... </h2>
+        <main>
+            <article>
+                <header>
+                    <h1> Using JSP and XML sintax... </h1>
+                </header>
         
-        <!-- include = includes another file -->
-        <%@include file="outsider.jsp" %>
-        <jsp:include page="outsider.jsp"></jsp:include>
-        
+                <!-- include = includes another file -->
+                <%@include file="outsider.jsp" %>
+                <jsp:include page="outsider.jsp"></jsp:include>
+            </article>
+        </main>
     </body>
 </html>
